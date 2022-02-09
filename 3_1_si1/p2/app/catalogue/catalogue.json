@@ -1,0 +1,1213 @@
+{
+  "peliculas": [
+    {
+      "id": 11312,
+      "titulo": "Airport '77 (1977)",
+      "poster": "imagenes/11312.jpg",
+      "director": [
+        "Jameson, Jerry"
+      ],
+      "ano": "1977",
+      "precio": 13.0,
+      "producto": 150,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "actores": [
+        {
+          "nombre": "Lemmon, Jack",
+          "character": "Capt. Don Gallagher"
+        },
+        {
+          "nombre": "Stewart, James (I)",
+          "character": "Philip Stevens"
+        },
+        {
+          "nombre": "Tuerpe, Paul",
+          "character": "Officer of the Deck"
+        },
+        {
+          "nombre": "Burke, Ron",
+          "character": "Passenger"
+        },
+        {
+          "nombre": "Battaglia, Anthony (I)",
+          "character": "Benjy"
+        },
+        {
+          "nombre": "Jelliffe, Bill",
+          "character": "Controller #1"
+        },
+        {
+          "nombre": "Lord, Charlotte",
+          "character": "Stewardess #2"
+        },
+        {
+          "nombre": "Kennedy, George (I)",
+          "character": "Joe Patroni"
+        },
+        {
+          "nombre": "Gill, Beverly",
+          "character": "Stewardess #3"
+        },
+        {
+          "nombre": "Golonka, Arlene",
+          "character": "Mrs. Jane Stern"
+        }
+      ]
+    },
+    {
+      "id": 97180,
+      "titulo": "Dead Poets Society (1989)",
+      "poster": "imagenes/97180.jpg",
+      "director": [
+        "Weir, Peter"
+      ],
+      "ano": "1989",
+      "precio": 10.0,
+      "producto": 1530,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Drama"
+      ],
+      "actores": [
+        {
+          "nombre": "Pottinger, Alan",
+          "character": "Bubba"
+        },
+        {
+          "nombre": "Carey, Matt",
+          "character": "Hopkins"
+        },
+        {
+          "nombre": "Mathios, Steve",
+          "character": "Steve"
+        },
+        {
+          "nombre": "Hill, Andrew (I)",
+          "character": "Senior Student"
+        },
+        {
+          "nombre": "Sutton, Hoover",
+          "character": "Welton Professor"
+        },
+        {
+          "nombre": "Walters, Melora",
+          "character": "Gloria"
+        },
+        {
+          "nombre": "Lord, Charles",
+          "character": "Mr. Dalton"
+        },
+        {
+          "nombre": "Kirk, Nancy",
+          "character": "Parent"
+        },
+        {
+          "nombre": "Gleason, Robert (I)",
+          "character": "Spaz's Father"
+        },
+        {
+          "nombre": "Zigler III, Robert J.",
+          "character": "Beans"
+        }
+      ]
+    },
+    {
+      "id": 137412,
+      "titulo": "Fire Down Below (1997)",
+      "poster": "imagenes/137412.jpg",
+      "director": [
+        "Enr\u00edquez Alcal\u00e1, F\u00e9lix"
+      ],
+      "ano": "1997",
+      "precio": 10.0,
+      "producto": 2060,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "actores": [
+        {
+          "nombre": "Mellon, Brett",
+          "character": "Townsperson #2"
+        },
+        {
+          "nombre": "Prosky, John",
+          "character": "Aide #1"
+        },
+        {
+          "nombre": "Julius, Nicky",
+          "character": "Casino Patron"
+        },
+        {
+          "nombre": "Letts, Dennis",
+          "character": "Doctor Schultz"
+        },
+        {
+          "nombre": "Johnson, Rick (I)",
+          "character": "Security #1"
+        },
+        {
+          "nombre": "Ridgely, Robert",
+          "character": "Simon"
+        },
+        {
+          "nombre": "Richerson, Mackie",
+          "character": "Minor #2"
+        },
+        {
+          "nombre": "Gulino, John P.",
+          "character": "Joey Chips"
+        },
+        {
+          "nombre": "Mullins, Julie Dawn",
+          "character": "Christine Carr"
+        },
+        {
+          "nombre": "Helm, Levon",
+          "character": "Reverend Bob Goodall"
+        }
+      ]
+    },
+    {
+      "id": 141772,
+      "titulo": "Forbidden Planet (1956)",
+      "poster": "imagenes/141772.jpg",
+      "director": [
+        "Wilcox, Fred M."
+      ],
+      "ano": "1956",
+      "precio": 13.0,
+      "producto": 2158,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Drama",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "actores": [
+        {
+          "nombre": "Drury, James",
+          "character": "Joe Strong"
+        },
+        {
+          "nombre": "Pidgeon, Walter",
+          "character": "Dr. Edward Morbius"
+        },
+        {
+          "nombre": "Best, James (I)",
+          "character": "Crewman"
+        },
+        {
+          "nombre": "Nielsen, Leslie (I)",
+          "character": "Commander John J. Adams"
+        },
+        {
+          "nombre": "Stevens, Warren (I)",
+          "character": "Lt. 'Doc' Ostrow"
+        },
+        {
+          "nombre": "Wallace, George (I)",
+          "character": "Bosun"
+        },
+        {
+          "nombre": "Boyett, William",
+          "character": "Crewman"
+        },
+        {
+          "nombre": "Tremayne, Les",
+          "character": "Narrator"
+        },
+        {
+          "nombre": "Holliman, Earl",
+          "character": "James Dirocco, the cook"
+        },
+        {
+          "nombre": "McGee, Roger",
+          "character": "Lindstrom"
+        }
+      ]
+    },
+    {
+      "id": 153615,
+      "titulo": "Ghost and Mrs. Muir, The (1947)",
+      "poster": "imagenes/153615.jpg",
+      "director": [
+        "Mankiewicz, Joseph L."
+      ],
+      "ano": "1947",
+      "precio": 14.0,
+      "producto": 2330,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Fantasy",
+        "Romance"
+      ],
+      "actores": [
+        {
+          "nombre": "Stelling, William",
+          "character": "Bill, Anna's Fiancee"
+        },
+        {
+          "nombre": "Thursby, David",
+          "character": "Mr. Scroggins"
+        },
+        {
+          "nombre": "Sanders, George (I)",
+          "character": "Miles Fairley"
+        },
+        {
+          "nombre": "Lee, Anna (I)",
+          "character": "Mrs. Miles Fairley"
+        },
+        {
+          "nombre": "Best, Edna",
+          "character": "Martha Huggins"
+        },
+        {
+          "nombre": "Harrison, Rex (I)",
+          "character": "Capt. Daniel Gregg"
+        },
+        {
+          "nombre": "Wilde, Heather",
+          "character": "Fairley Maid"
+        },
+        {
+          "nombre": "Elsom, Isobel",
+          "character": "Angelica, Mother-in-law"
+        },
+        {
+          "nombre": "Freeman, Helen",
+          "character": "Author Displaced by Lucy"
+        },
+        {
+          "nombre": "Holmes, Stuart",
+          "character": "Man Ordered out of Train Compartment by Captain"
+        }
+      ]
+    },
+    {
+      "id": 166371,
+      "titulo": "Halloween 5 (1989)",
+      "poster": "imagenes/166371.jpg",
+      "director": [
+        "Othenin-Girard, Dominique (I)"
+      ],
+      "ano": "1989",
+      "precio": 11.0,
+      "producto": 2567,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Horror",
+        "Thriller"
+      ],
+      "actores": [
+        {
+          "nombre": "Davis, Stanton (I)",
+          "character": "Deputy Maryland"
+        },
+        {
+          "nombre": "Gilbert, John (II)",
+          "character": "Myers House Sniper"
+        },
+        {
+          "nombre": "Platten, Jon Richard",
+          "character": "Pageant Detective"
+        },
+        {
+          "nombre": "McGinn, Russ",
+          "character": "Pageant Announcer"
+        },
+        {
+          "nombre": "Bernard, Jay",
+          "character": "Tall Policeman"
+        },
+        {
+          "nombre": "Cornell, Ellie",
+          "character": "Rachel Carruthers"
+        },
+        {
+          "nombre": "White, Patrick (VI)",
+          "character": "Costumed Teen at Party"
+        },
+        {
+          "nombre": "North, Jack (I)",
+          "character": "Clinic Groundsman"
+        },
+        {
+          "nombre": "Kaplan, Wendy (I)",
+          "character": "Tina Williams"
+        },
+        {
+          "nombre": "Harris, Danielle",
+          "character": "Jamie Lloyd Carruthers"
+        }
+      ]
+    },
+    {
+      "id": 170182,
+      "titulo": "He Got Game (1998)",
+      "poster": "imagenes/170182.jpg",
+      "director": [
+        "Lee, Spike"
+      ],
+      "ano": "1998",
+      "precio": 12.0,
+      "producto": 2637,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Drama",
+        "Sport"
+      ],
+      "actores": [
+        {
+          "nombre": "Finley, Felicia",
+          "character": "Molly"
+        },
+        {
+          "nombre": "Scales, Alonzo",
+          "character": "Goose"
+        },
+        {
+          "nombre": "Vitale, Dick",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Richardson, Nolan",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Lain, Chasey (I)",
+          "character": "Buffy"
+        },
+        {
+          "nombre": "Shay, Michele",
+          "character": "Aunt Sally"
+        },
+        {
+          "nombre": "Smith, Roger Guenveur",
+          "character": "Big Time Willie"
+        },
+        {
+          "nombre": "Breland, Mark",
+          "character": "Man With Gat"
+        },
+        {
+          "nombre": "O'Neal, Shaquille",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Rom, Lori",
+          "character": "June"
+        }
+      ]
+    },
+    {
+      "id": 179200,
+      "titulo": "Home Alone 3 (1997)",
+      "poster": "imagenes/179200.jpg",
+      "director": [
+        "Gosnell, Raja"
+      ],
+      "ano": "1997",
+      "precio": 16.0,
+      "producto": 2789,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Family"
+      ],
+      "actores": [
+        {
+          "nombre": "Lee, Zachary",
+          "character": "Johnny Allen"
+        },
+        {
+          "nombre": "Linz, Alex D.",
+          "character": "Alex Pruitt"
+        },
+        {
+          "nombre": "Healy, Pat (I)",
+          "character": "Agent Rogers"
+        },
+        {
+          "nombre": "Cheever, Caryn",
+          "character": "Ticketing Agent"
+        },
+        {
+          "nombre": "Krupa, Olek",
+          "character": "Peter Beaupre"
+        },
+        {
+          "nombre": "Mockus Jr., Tony",
+          "character": "Police Officer #2"
+        },
+        {
+          "nombre": "Curry, Christopher (I)",
+          "character": "Agent Stuckey"
+        },
+        {
+          "nombre": "Harris, Darwin",
+          "character": "Photographer"
+        },
+        {
+          "nombre": "Johansson, Scarlett",
+          "character": "Molly Pruitt"
+        },
+        {
+          "nombre": "Kihlstedt, Rya",
+          "character": "Alice Ribbons"
+        }
+      ]
+    },
+    {
+      "id": 236631,
+      "titulo": "Love Is the Devil: Study for a Portrait of Francis Bacon (1998)",
+      "poster": "imagenes/236631.jpg",
+      "director": [
+        "Maybury, John"
+      ],
+      "ano": "1998",
+      "precio": 15.0,
+      "producto": 3590,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Biography",
+        "Drama"
+      ],
+      "actores": [
+        {
+          "nombre": "Umbers, Mark",
+          "character": "PC Denham"
+        },
+        {
+          "nombre": "Kerr, Eddie",
+          "character": "Tailor"
+        },
+        {
+          "nombre": "Hogg, Pam",
+          "character": "Person in Restaurant"
+        },
+        {
+          "nombre": "Johnson, Miles (I)",
+          "character": "Person at the Paris Opening"
+        },
+        {
+          "nombre": "Olley, Ray",
+          "character": "Boxing referee"
+        },
+        {
+          "nombre": "Shand Kydd, Johnnie",
+          "character": "Person in French Pub"
+        },
+        {
+          "nombre": "Newbould, Richard",
+          "character": "Blond Billy"
+        },
+        {
+          "nombre": "de Ravenel, Ariel",
+          "character": "French Official"
+        },
+        {
+          "nombre": "Fawkes, Sandy",
+          "character": "Person in the Colony Room Club"
+        },
+        {
+          "nombre": "Soughan, Josephine",
+          "character": "Person in French Pub"
+        }
+      ]
+    },
+    {
+      "id": 302326,
+      "titulo": "Paul Bowles - Halbmond (1995)",
+      "poster": "imagenes/302326.jpg",
+      "director": [
+        "Schlaich, Frieder",
+        "von Alberti, Irene"
+      ],
+      "ano": "1995",
+      "precio": 19.0,
+      "producto": 4517,
+      "lenguaje": [
+        "Arabic",
+        "English"
+      ],
+      "categoria": [
+        "Drama"
+      ],
+      "actores": [
+        {
+          "nombre": "Belfquin, Mohammed",
+          "character": "Alter Mann (Episode Allal)"
+        },
+        {
+          "nombre": "Quilligan, Veronica",
+          "character": "Frau (Episode Zwischenhalt in Coraz\u00f3n)"
+        },
+        {
+          "nombre": "Cox, Sam (I)",
+          "character": "Mann (Episode Zwischenhalt in Coraz\u00f3n)"
+        },
+        {
+          "nombre": "Bowles, Paul",
+          "character": "Erz\u00e4hler"
+        },
+        {
+          "nombre": "Zakir, Said",
+          "character": "Allal (Episode Allal)"
+        },
+        {
+          "nombre": "Guesmi, Samir",
+          "character": "Lahcen (Episode Am Strand von Markala)"
+        },
+        {
+          "nombre": "Ksouri, Khaled",
+          "character": "Idir (Episode Am Strand von Markala)"
+        },
+        {
+          "nombre": "Belhassen, Sondos",
+          "character": "M\u00e4dchen (Episode Am Strand von Merkala)"
+        }
+      ]
+    },
+    {
+      "id": 337783,
+      "titulo": "Rocketship X-M (1950)",
+      "poster": "imagenes/337783.jpg",
+      "director": [
+        "Neumann, Kurt (I)"
+      ],
+      "ano": "1950",
+      "precio": 12.0,
+      "producto": 5036,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Sci-Fi"
+      ],
+      "actores": [
+        {
+          "nombre": "Holmes, Stuart",
+          "character": "Reporter"
+        },
+        {
+          "nombre": "Bridges, Lloyd",
+          "character": "Col. Floyd Graham"
+        },
+        {
+          "nombre": "Harris, Sam (II)",
+          "character": "Reporter at Press Briefing"
+        },
+        {
+          "nombre": "Massen, Osa",
+          "character": "Dr. Lisa Van Horn"
+        },
+        {
+          "nombre": "Dutra, John",
+          "character": "Physician"
+        },
+        {
+          "nombre": "Conaty, James (I)",
+          "character": "Doctor Taking Lisa's Blood Pressure"
+        },
+        {
+          "nombre": "Holdren, Judd",
+          "character": "Reporter #3"
+        },
+        {
+          "nombre": "Stevens, Bert (I)",
+          "character": "Reporter"
+        },
+        {
+          "nombre": "Aherne, Patrick",
+          "character": "Reporter #1"
+        },
+        {
+          "nombre": "Emery, John (I)",
+          "character": "Dr. Karl Eckstrom"
+        }
+      ]
+    },
+    {
+      "id": 341318,
+      "titulo": "Rugrats Movie, The (1998)",
+      "poster": "imagenes/341318.jpg",
+      "director": [
+        "Kovalyov, Igor",
+        "Virgien, Norton"
+      ],
+      "ano": "1998",
+      "precio": 10.0,
+      "producto": 5109,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Family",
+        "Musical"
+      ],
+      "actores": [
+        {
+          "nombre": "Clinton, Roger",
+          "character": "Air Crewman"
+        },
+        {
+          "nombre": "Goldberg, Whoopi",
+          "character": "Ranger Margaret"
+        },
+        {
+          "nombre": "Zirnkilton, Steven",
+          "character": "Reporter"
+        },
+        {
+          "nombre": "Pop, Iggy",
+          "character": "Newborn Baby"
+        },
+        {
+          "nombre": "Summer, Cree",
+          "character": "Susie Carmichael"
+        },
+        {
+          "nombre": "Bell, Michael (I)",
+          "character": "Chas Finster/Drew Pickles/Grandpa Boris"
+        },
+        {
+          "nombre": "Alaskey, Joe",
+          "character": "Grandpa Lou Pickles"
+        },
+        {
+          "nombre": "Schneider, Fred (I)",
+          "character": "Newborn Baby"
+        },
+        {
+          "nombre": "Curry, Tim (I)",
+          "character": "Rex Pester"
+        },
+        {
+          "nombre": "Harper, Angel",
+          "character": "Reporter"
+        }
+      ]
+    },
+    {
+      "id": 370595,
+      "titulo": "Soldier (1998/I)",
+      "poster": "imagenes/370595.jpg",
+      "director": [
+        "Anderson, Paul W.S."
+      ],
+      "ano": "1998",
+      "precio": 17.0,
+      "producto": 5465,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "actores": [
+        {
+          "nombre": "Wehle, Brenda",
+          "character": "Hawkins"
+        },
+        {
+          "nombre": "Orlov, Vladimir (I)",
+          "character": "Romero"
+        },
+        {
+          "nombre": "Turner, Danny",
+          "character": "Omar"
+        },
+        {
+          "nombre": "Manley, Shawn",
+          "character": "Sean"
+        },
+        {
+          "nombre": "Thorne, Taylor",
+          "character": "Nathan"
+        },
+        {
+          "nombre": "Nielsen, Connie (I)",
+          "character": "Sandra"
+        },
+        {
+          "nombre": "Muehlbauer, Celina",
+          "character": "Little Crossfire Girl"
+        },
+        {
+          "nombre": "Black, James (II)",
+          "character": "Riley"
+        },
+        {
+          "nombre": "Bringleson, Mark",
+          "character": "Rubrick"
+        },
+        {
+          "nombre": "Nolan, Ashley",
+          "character": "Judith"
+        }
+      ]
+    },
+    {
+      "id": 373875,
+      "titulo": "Soylent Green (1973)",
+      "poster": "imagenes/373875.jpg",
+      "director": [
+        "Fleischer, Richard"
+      ],
+      "ano": "1973",
+      "precio": 10.0,
+      "producto": 5537,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Drama",
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "actores": [
+        {
+          "nombre": "Houtchens, Pat",
+          "character": "Fat Guard"
+        },
+        {
+          "nombre": "Herbert, Tim (I)",
+          "character": "Brady"
+        },
+        {
+          "nombre": "Hagen, Erica",
+          "character": "Furniture Girl"
+        },
+        {
+          "nombre": "Ito, Robert",
+          "character": "Shoe seller"
+        },
+        {
+          "nombre": "Dulo, Jane",
+          "character": "Mrs. Santini"
+        },
+        {
+          "nombre": "Howell, Cheri",
+          "character": "Furniture Girl"
+        },
+        {
+          "nombre": "Peters, Brock",
+          "character": "Lt. Hatcher, Chief of Detectives"
+        },
+        {
+          "nombre": "Williams, Joyce (I)",
+          "character": "Furniture Girl"
+        },
+        {
+          "nombre": "Bradley, Jan",
+          "character": "Bandana Woman"
+        },
+        {
+          "nombre": "Stone, Leonard",
+          "character": "Supt. Charles"
+        }
+      ]
+    },
+    {
+      "id": 380767,
+      "titulo": "Story of Us, The (1999)",
+      "poster": "imagenes/380767.jpg",
+      "director": [
+        "Reiner, Rob"
+      ],
+      "ano": "1999",
+      "precio": 16.0,
+      "producto": 5688,
+      "lenguaje": [
+        "English",
+        "Italian"
+      ],
+      "categoria": [
+        "Comedy",
+        "Drama",
+        "Reality-TV"
+      ],
+      "actores": [
+        {
+          "nombre": "Carbone, Denise",
+          "character": "Mary"
+        },
+        {
+          "nombre": "Moreno, Matthew",
+          "character": "Taxi Driver"
+        },
+        {
+          "nombre": "Lund, Jordan",
+          "character": "Clergyman"
+        },
+        {
+          "nombre": "Boersma, Dylan",
+          "character": "Josh Jordan at Three"
+        },
+        {
+          "nombre": "Evans, Art",
+          "character": "George"
+        },
+        {
+          "nombre": "Reiner, Rob",
+          "character": "Stan"
+        },
+        {
+          "nombre": "Raider-Wexler, Victor",
+          "character": "Dr. Hopkins"
+        },
+        {
+          "nombre": "Rosenberg, Marci",
+          "character": "Sonia"
+        },
+        {
+          "nombre": "Hagerty, Julie",
+          "character": "Liza"
+        },
+        {
+          "nombre": "Sandvig, Jake",
+          "character": "Josh Jordan at Twelve"
+        }
+      ]
+    },
+    {
+      "id": 385444,
+      "titulo": "Superman (1978)",
+      "poster": "imagenes/385444.jpg",
+      "director": [
+        "Donner, Richard"
+      ],
+      "ano": "1978",
+      "precio": 14.0,
+      "producto": 5761,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi"
+      ],
+      "actores": [
+        {
+          "nombre": "Russo, Matt",
+          "character": "News Vendor"
+        },
+        {
+          "nombre": "Hollis, John (I)",
+          "character": "4th Elder"
+        },
+        {
+          "nombre": "Ingham, Jill",
+          "character": "Perry's Secretary"
+        },
+        {
+          "nombre": "York, Susannah",
+          "character": "Lara"
+        },
+        {
+          "nombre": "Etherington, Colin",
+          "character": "Power Co. Driver"
+        },
+        {
+          "nombre": "Evans, Ray (III)",
+          "character": "6th Reporter"
+        },
+        {
+          "nombre": "Stamp, Terence",
+          "character": "General Zod"
+        },
+        {
+          "nombre": "Donner, Richard",
+          "character": "Man on street (cameo in expanded edition)"
+        },
+        {
+          "nombre": "Kahan, Steve",
+          "character": "Detective Armus"
+        },
+        {
+          "nombre": "Skeaping, Colin",
+          "character": "Pilot"
+        }
+      ]
+    },
+    {
+      "id": 389995,
+      "titulo": "Take the Money and Run (1969)",
+      "poster": "imagenes/389995.jpg",
+      "director": [
+        "Allen, Woody"
+      ],
+      "ano": "1969",
+      "precio": 14.0,
+      "producto": 5819,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Comedy",
+        "Crime"
+      ],
+      "actores": [
+        {
+          "nombre": "Storm, Howard",
+          "character": "Fred"
+        },
+        {
+          "nombre": "Engel, Roy",
+          "character": "Prison guard captain"
+        },
+        {
+          "nombre": "Lasser, Louise",
+          "character": "Kay Lewis"
+        },
+        {
+          "nombre": "Jacobson, Nate",
+          "character": "The Judge"
+        },
+        {
+          "nombre": "Rose, Mickey",
+          "character": "Chain gang man"
+        },
+        {
+          "nombre": "Bellin, Thomas",
+          "character": "Member of Virgil's gang"
+        },
+        {
+          "nombre": "Frazer, Dan",
+          "character": "The psychiatrist"
+        },
+        {
+          "nombre": "Schumacher, Paul",
+          "character": "Patrolman Lynch"
+        },
+        {
+          "nombre": "Gordon, Mark (I)",
+          "character": "Vince"
+        },
+        {
+          "nombre": "Murphy, Micil",
+          "character": "Frank"
+        }
+      ]
+    },
+    {
+      "id": 391967,
+      "titulo": "Tarzan and the Lost City (1998)",
+      "poster": "imagenes/391967.jpg",
+      "director": [
+        "Schenkel, Carl (I)"
+      ],
+      "ano": "1998",
+      "precio": 14.0,
+      "producto": 5850,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "actores": [
+        {
+          "nombre": "Janschek, Pete",
+          "character": "Laconte"
+        },
+        {
+          "nombre": "Mdaka, Bismilla",
+          "character": "Jeremiah"
+        },
+        {
+          "nombre": "Cassar, Dimitri",
+          "character": "Klemmer"
+        },
+        {
+          "nombre": "Grigg, Nickie",
+          "character": "Stonehouse"
+        },
+        {
+          "nombre": "Dlamini, Sello",
+          "character": "Scout"
+        },
+        {
+          "nombre": "Ntshona, Winston",
+          "character": "Mugambe"
+        },
+        {
+          "nombre": "Seiphemo, Rapulana",
+          "character": "Kaya"
+        },
+        {
+          "nombre": "Spyro, Peter",
+          "character": "Winston"
+        },
+        {
+          "nombre": "Van Der Berg, Henry",
+          "character": "Lucas"
+        },
+        {
+          "nombre": "Fukazi, Chester",
+          "character": "Waiter"
+        }
+      ]
+    },
+    {
+      "id": 438143,
+      "titulo": "When We Were Kings (1996)",
+      "poster": "imagenes/438143.jpg",
+      "director": [
+        "Gast, Leon"
+      ],
+      "ano": "1996",
+      "precio": 15.0,
+      "producto": 6435,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Documentary",
+        "History",
+        "Sport"
+      ],
+      "actores": [
+        {
+          "nombre": "Plimpton, George",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Cosell, Howard",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Felder, Wilton",
+          "character": "Himself (sax, The Crusaders)"
+        },
+        {
+          "nombre": "King, Don (I)",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Bowens, Malick",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Brown, James (I)",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Clay, Odessa",
+          "character": "Herself (mother of Ali)"
+        },
+        {
+          "nombre": "Price, Lloyd (II)",
+          "character": "Himself"
+        },
+        {
+          "nombre": "Wynne, Phillipe",
+          "character": "Himself (member of The Spinners)"
+        },
+        {
+          "nombre": "Lee, Spike",
+          "character": "Himself"
+        }
+      ]
+    },
+    {
+      "id": 445249,
+      "titulo": "Wrongfully Accused (1998)",
+      "poster": "imagenes/445249.jpg",
+      "director": [
+        "Proft, Pat"
+      ],
+      "ano": "1998",
+      "precio": 10.0,
+      "producto": 6556,
+      "lenguaje": [
+        "English"
+      ],
+      "categoria": [
+        "Action",
+        "Comedy"
+      ],
+      "actores": [
+        {
+          "nombre": "Sood, Veena",
+          "character": "Nurse"
+        },
+        {
+          "nombre": "Payn, Jason",
+          "character": "Wanted Poster Boy"
+        },
+        {
+          "nombre": "Hearn, Chick",
+          "character": "Basketball Announcer"
+        },
+        {
+          "nombre": "Guo, Calvin",
+          "character": "Japanese Gardener"
+        },
+        {
+          "nombre": "Francis, Mark (II)",
+          "character": "Abe Lincoln"
+        },
+        {
+          "nombre": "Boynton, Alexander",
+          "character": "Security Guard #2"
+        },
+        {
+          "nombre": "Hart, Michelle (II)",
+          "character": "Reporter #2"
+        },
+        {
+          "nombre": "Nielsen, Robin",
+          "character": "Party Waiter"
+        },
+        {
+          "nombre": "Harvie, Ellie",
+          "character": "Ruth Kimble"
+        },
+        {
+          "nombre": "Arnold, Brian",
+          "character": "Dan Clellan, News Reporter"
+        }
+      ]
+    }
+  ]
+}

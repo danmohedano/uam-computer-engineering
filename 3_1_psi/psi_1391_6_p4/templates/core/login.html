@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Login
+{% endblock %}
+
+{% block body_block %}
+    {% if error == 1 %}
+        <p>Whoops. Seems like your username and password didn't match. Please try again.</p>
+    {% elif error == 2 %}
+        <p> Invalid form. </p>
+    {% elif error == 3 %}
+        <p>Hey <strong>{{ user.first_name }}  {{ user.last_name }}</strong>. What are you doing here? You are already logged in.</p>
+        <p>Log out if you want to login as another user.</p>
+    {% elif error == 0%}
+    <p>Please login to access this web site</p>
+    <form id="login_form" method="post" action="{% url 'core:login' %}">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="submit" />
+    </form>
+    {% endif %}
+{% endblock %}

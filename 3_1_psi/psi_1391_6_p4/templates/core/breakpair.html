@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Break Pair
+{% endblock %}
+
+{% block body_block %}
+    {% if msg == 0 %}
+        <p>Here you can request to break a pair.</p>
+        <p>Remember that if the pair is validated, the other student should also request the pair to be broken.</p>
+        Select the pair to be broken:
+        <form id="pair_break" method="post" action="{% url 'core:breakpair' %}">
+            {% csrf_token %}
+            <p>
+                {{ form }}
+            </p>
+            <input type="submit" value="submit" name="pairid"/>
+        </form>
+    {% elif msg == 1 %}
+        Pair formed by {{ s1 }} {{ s2 }} has been deleted.
+    {% elif msg == 2 %}
+        Pair has not been deleted. The other member of the pair should also break the pair.
+    {% elif msg == 3 %}
+        Could not process your request.
+    {% endif %}
+{% endblock %}

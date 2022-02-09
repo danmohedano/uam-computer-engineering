@@ -1,0 +1,57 @@
+Después de hacer ant todo:
+
+Buildfile: /home/eps/Documentos/3_2_si2/p1/P1-base/build.xml
+
+todo:
+
+create-pool-local:
+     [echo] Registering jdbc-connection-pool VisaPool.
+     [echo] ds=org.postgresql.ds.PGConnectionPoolDataSource
+
+create-jdbc-connection-pool:
+     [exec] JDBC connection pool VisaPool created successfully.
+     [exec] Command create-jdbc-connection-pool executed successfully.
+
+create-resource-local:
+     [echo] Registering jdbc resource jdbc/VisaDB.
+
+create-jdbc-resource:
+     [exec] JDBC resource jdbc/VisaDB created successfully.
+     [exec] Command create-jdbc-resource executed successfully.
+
+delete-db:
+     [echo] driver=org.postgresql.Driver
+     [echo] url=jdbc:postgresql://10.3.12.1:5432/visa
+     [echo] user=alumnodb
+     [echo] password=****
+     [exec] dropdb: error: falló la eliminación de la base de datos: ERROR:  database "visa" does not exist
+     [exec] Result: 1
+
+create-db:
+      [sql] Executing resource: /home/eps/Documentos/3_2_si2/p1/P1-base/sql/create.sql
+      [sql] Executing resource: /home/eps/Documentos/3_2_si2/p1/P1-base/sql/insert.sql
+      [sql] 1003 of 1003 SQL statements executed successfully
+
+setup-db:
+
+montar-jerarquia:
+    [mkdir] Created dir: /home/eps/Documentos/3_2_si2/p1/P1-base/build
+    [mkdir] Created dir: /home/eps/Documentos/3_2_si2/p1/P1-base/dist
+    [mkdir] Created dir: /home/eps/Documentos/3_2_si2/p1/P1-base/build/WEB-INF/classes
+    [mkdir] Created dir: /home/eps/Documentos/3_2_si2/p1/P1-base/build/WEB-INF/lib
+
+compilar:
+    [javac] Compiling 17 source files to /home/eps/Documentos/3_2_si2/p1/P1-base/build/WEB-INF/classes
+
+preparar-web-inf:
+     [copy] Copying 11 files to /home/eps/Documentos/3_2_si2/p1/P1-base/build
+
+empaquetar:
+      [jar] Building jar: /home/eps/Documentos/3_2_si2/p1/P1-base/dist/P1.war
+
+desplegar:
+     [exec] Application deployed with name P1.
+     [exec] Command deploy executed successfully.
+
+BUILD SUCCESSFUL
+Total time: 1 minute 16 seconds

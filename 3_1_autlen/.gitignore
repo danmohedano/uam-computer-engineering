@@ -1,0 +1,4 @@
+*.o
+*.dot
+p1/tutorial/
+p1/maintest/

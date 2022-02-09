@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Break Pair
+{% endblock %}
+
+{% block body_block %}
+    {% if msg == 0 %}
+        Do you want to delete the pair between <strong>{{ student1 }}</strong> and <strong>{{ student2 }}</strong>:
+        <form id="pair_break" method="post" action="{% url 'core:breakpair' %}">
+            {% csrf_token %}
+            <input type="submit" value="Yes" />
+        </form>
+    {% elif msg == 1 %}
+        You are not a part of a validated pair or you have NOT requested a pair.
+    {% elif msg == 2 %}
+        You have requested to break the pair. <strong>{{ student2 }}</strong> should also break the pair.
+    {% elif msg == 3 %}
+        You have already requested to break the pair.
+    {% elif msg == 4 %}
+        The pair has been broken succesfully.        
+    {% endif %}
+{% endblock %}

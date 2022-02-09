@@ -1,0 +1,27 @@
+Ex0)
+Laptop:
+-4 physical cpus (cpu cores)
+-8 virtual cpus (siblings)
+-each physical has 2 virtual => hyperthreading
+
+cpu MHz		: 3598.131
+cpu MHz		: 3574.360
+cpu MHz		: 3503.157
+cpu MHz		: 3585.290
+cpu MHz		: 3575.346
+cpu MHz		: 3567.221
+cpu MHz		: 3586.133
+cpu MHz		: 3599.670
+
+
+-> CHANGES IN EACH EXECUTION??????? (1.6GHz for the model)
+Ex1)
+If executed without commands it uses a total of 8 threads (confirming the 
+pc has 8 cpus even if virtual).
+1.1- You can create more than threads than cores the system has. Tho 
+
+2.5 min=5000000 max=500000000
+
+TODO:
+Acceleration 2.5
+3.3

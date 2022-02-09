@@ -1,0 +1,79 @@
+E)
+Sin los índices se hace un full table scan.
+Al añadir un índice en alguna de las dos columnas se pasa a hacer un index scan para esa columnas
+y luego un heap scan con filtro para la otra condición.
+Por último si se crea un índice para ambas columnas ya no se necesita el filtro en el heap scan
+(todo se hace en el index scan). !el orden importa
+F)
+i) La tercera consulta
+ii) La segunda y a lo mejor la tercera (dependiendo de como se ejecute el except)
+G)
+    b)
+                                QUERY PLAN                            
+    -----------------------------------------------------------------
+    Aggregate  (cost=3507.17..3507.18 rows=1 width=8)
+    ->  Seq Scan on orders  (cost=0.00..3504.90 rows=909 width=0)
+            Filter: (status IS NULL)
+    (3 filas)
+
+                            QUERY PLAN                            
+    -----------------------------------------------------------------
+    Aggregate  (cost=3961.65..3961.66 rows=1 width=8)
+    ->  Seq Scan on orders  (cost=0.00..3959.38 rows=909 width=0)
+            Filter: ((status)::text = 'Shipped'::text)
+    (3 filas)
+    Quizás tarde más la segunda por tener que comparar texto
+    d)
+                                           QUERY PLAN                                        
+    -----------------------------------------------------------------------------------------
+    Aggregate  (cost=1496.52..1496.53 rows=1 width=8)
+    ->  Bitmap Heap Scan on orders  (cost=19.46..1494.25 rows=909 width=0)
+            Recheck Cond: (status IS NULL)
+            ->  Bitmap Index Scan on idx_status_orders  (cost=0.00..19.24 rows=909 width=0)
+                Index Cond: (status IS NULL)
+    (5 filas)
+
+                                        QUERY PLAN                                        
+    -----------------------------------------------------------------------------------------
+    Aggregate  (cost=1498.79..1498.80 rows=1 width=8)
+    ->  Bitmap Heap Scan on orders  (cost=19.46..1496.52 rows=909 width=0)
+            Recheck Cond: ((status)::text = 'Shipped'::text)
+            ->  Bitmap Index Scan on idx_status_orders  (cost=0.00..19.24 rows=909 width=0)
+                Index Cond: ((status)::text = 'Shipped'::text)
+    (5 filas)
+    Pues tarda menos la verdad
+
+                                            QUERY PLAN                                         
+    -------------------------------------------------------------------------------------------
+    Aggregate  (cost=7.27..7.28 rows=1 width=8)
+    ->  Index Only Scan using idx_status_orders on orders  (cost=0.42..7.27 rows=1 width=0)
+            Index Cond: (status IS NULL)
+    (3 filas)
+
+                                        QUERY PLAN                                       
+    ----------------------------------------------------------------------------------------
+    Finalize Aggregate  (cost=4210.57..4210.58 rows=1 width=8)
+    ->  Gather  (cost=4210.45..4210.56 rows=1 width=8)
+            Workers Planned: 1
+            ->  Partial Aggregate  (cost=3210.45..3210.46 rows=1 width=8)
+                ->  Parallel Seq Scan on orders  (cost=0.00..3023.69 rows=74705 width=0)
+                        Filter: ((status)::text = 'Shipped'::text)
+    (6 filas)
+
+                                            QUERY PLAN                                         
+    --------------------------------------------------------------------------------------------
+    Aggregate  (cost=2319.74..2319.75 rows=1 width=8)
+    ->  Bitmap Heap Scan on orders  (cost=360.88..2274.43 rows=18124 width=0)
+            Recheck Cond: ((status)::text = 'Paid'::text)
+            ->  Bitmap Index Scan on idx_status_orders  (cost=0.00..356.35 rows=18124 width=0)
+                Index Cond: ((status)::text = 'Paid'::text)
+    (5 filas)
+
+                                            QUERY PLAN                                         
+    --------------------------------------------------------------------------------------------
+    Aggregate  (cost=2961.59..2961.60 rows=1 width=8)
+    ->  Bitmap Heap Scan on orders  (cost=724.59..2869.93 rows=36667 width=0)
+            Recheck Cond: ((status)::text = 'Processed'::text)
+            ->  Bitmap Index Scan on idx_status_orders  (cost=0.00..715.42 rows=36667 width=0)
+                Index Cond: ((status)::text = 'Processed'::text)
+    (5 filas)

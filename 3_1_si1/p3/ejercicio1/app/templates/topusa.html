@@ -1,0 +1,140 @@
+{% extends "base.html" %} 
+{% block title %} 
+    {{ title }} 
+{% endblock %} 
+
+{% block content %}
+
+<div class="topusa">
+    <p>Peliculas de comedia del año 1997 con la palabra 'Life' contenida.</p>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Géneros</th>
+            <th>Año</th>
+            <th>Director(es)</th>
+            <th>Actor(es)</th>
+            <th>Más relacionadas</th>
+            <th>Relacionadas</th>
+        </tr>
+        {% for pelicula in tabla1 %}
+            <tr>
+                <th>{{ pelicula.title }}</th>
+                <th>
+                    {% for genre in pelicula.genres %}
+                        {{ genre }}, 
+                    {% endfor %}
+                </th>
+                <th>{{ pelicula.year }}</th>
+                <th>
+                    {% for director in pelicula.directors %}
+                        {{ director }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for actor in pelicula.actors %}
+                        {{ actor }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.most_related_movies %}
+                        {{ p.title }};
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.related_movies %}
+                        {{ p.title }}; 
+                    {% endfor %}
+                </th>
+            </tr>          
+        {% endfor %}
+    </table>
+    <p>Películas dirigidas por Woody Aleen en los años 90.</p>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Géneros</th>
+            <th>Año</th>
+            <th>Director(es)</th>
+            <th>Actor(es)</th>
+            <th>Más relacionadas</th>
+            <th>Relacionadas</th>
+        </tr>
+        {% for pelicula in tabla2 %}
+            <tr>
+                <th>{{ pelicula.title }}</th>
+                <th>
+                    {% for genre in pelicula.genres %}
+                        {{ genre }}, 
+                    {% endfor %}
+                </th>
+                <th>{{ pelicula.year }}</th>
+                <th>
+                    {% for director in pelicula.directors %}
+                        {{ director }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for actor in pelicula.actors %}
+                        {{ actor }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.most_related_movies %}
+                        {{ p.title }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.related_movies %}
+                        {{ p.title }}; 
+                    {% endfor %}
+                </th>
+            </tr>          
+        {% endfor %}
+    </table>
+
+    <p>Películas en las que Jim Parsons y Jhonny Galecki hayan compartido reparto.</p>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Géneros</th>
+            <th>Año</th>
+            <th>Director(es)</th>
+            <th>Actor(es)</th>
+            <th>Más relacionadas</th>
+            <th>Relacionadas</th>
+        </tr>
+        {% for pelicula in tabla3 %}
+            <tr>
+                <th>{{ pelicula.title }}</th>
+                <th>
+                    {% for genre in pelicula.genres %}
+                        {{ genre }}, 
+                    {% endfor %}
+                </th>
+                <th>{{ pelicula.year }}</th>
+                <th>
+                    {% for director in pelicula.directors %}
+                        {{ director }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for actor in pelicula.actors %}
+                        {{ actor }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.most_related_movies %}
+                        {{ p.title }}; 
+                    {% endfor %}
+                </th>
+                <th>
+                    {% for p in pelicula.related_movies %}
+                        {{ p.title }}; 
+                    {% endfor %}
+                </th>
+            </tr>          
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

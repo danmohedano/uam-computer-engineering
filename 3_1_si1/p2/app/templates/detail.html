@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% block title %} 
+    {{ title }} 
+{% endblock %} 
+
+{% block content %}
+{% if msg %}
+    <p>{{ msg }}</p>
+{% endif %}
+<!-- BOTON DE AÑADIR AL CARRITO -->
+<div class="element-right">
+    <form action="" method="post">
+        <input type="submit" class="btn" value="Añadir al carrito">
+    </form>
+</div>
+
+<!-- NOMBRE PELICULA -->
+<div>
+    <h1>{{ movie.titulo }}</h1>
+</div>
+<!-- POSTER -->
+<img src={{ url_for('static', filename=movie.poster )}} alt="Póster" class="poster">
+
+<!-- INFORMACIÓN -->
+<div class="info-pelicula">
+    <div>
+        <h4>Director(es): <span class="item-info">
+            {% for d in movie.director %}
+                {{ d }} |  
+            {% endfor %}
+        </span></h4> 
+    </div>
+    <div>
+        <h4>Precio: <span class="item-info">{{ movie.precio }}</span></h4>
+    </div>
+    <div>
+        <h4>Categoría(s): <span class="item-info">
+            {% for c in movie.categoria %}
+                {{ c }}, 
+            {% endfor %}
+        </span></h4>
+    </div>
+    <div>
+        <h4>Año: <span class="item-info">{{ movie.ano }}</span></h4>
+    </div>
+    <div>
+        <h4>Actores:</h4><span class="item-info">
+        {% for actor in movie.actores %}
+            <b>{{ actor.nombre }}</b> ({{ actor.character }}), 
+        {% endfor %}
+    </span>
+    </div>
+</div>
+{% endblock %}

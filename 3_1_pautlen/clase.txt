@@ -1,0 +1,18 @@
+%token TOK_MAIN
+%token TOK_INT
+%token TOK_BOOLEAN
+%token TOK_identificador
+%%
+programa : TOK_MAIN '{' declaraciones '}'
+declaraciones : declaracion
+		| declaracion declaraciones
+declaracion : clase identificadores ';'
+clase : clase_escalar
+clase_escalar : tipo
+tipo : TOK_INT | TOK_BOOLEAN
+identificadores : TOK_identificador 
+		| TOK_identificador ',' identificadores
+%%
+int main(){
+	return yyparse();
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Log In</title>
+	<link rel="stylesheet" type="text/css" href={{ url_for( 'static', filename='style.css' ) }}>
+</head>
+
+<body>
+	<div class="login">
+		<div class="login-screen">
+			<h1>Login</h1>
+				<form action={{ url_for('login') }} method="post" novalidate>
+				<div class="login-form">
+					{% if last_user %}
+						<input name="email" type="email" value={{ last_user }} placeholder="email" id="login-name">
+					{% else %}
+						<input name="email" type="email" value="" placeholder="email" id="login-name">
+					{% endif %}
+				</div>
+
+				<div class="login-form">
+				<input name="password" type="password" value="" placeholder="password" id="login-password">
+				</div>
+				<input type="submit" value="login" class="btn">
+				</form>
+        		<p class="login-txt login-form">Si no está registrado, pinche <a href={{ url_for('register') }} class="login-link">aquí</a></p>
+				{% if error_msg %}
+			        <p class="login-txt"><b>{{ error_msg }}</b></p>
+				{% endif %}
+		</div>
+	</div>
+</body>

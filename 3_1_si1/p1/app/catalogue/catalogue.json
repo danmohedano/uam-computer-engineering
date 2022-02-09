@@ -1,0 +1,196 @@
+{ "peliculas": 
+  [ 
+    { 
+			"id": 1,
+			"titulo": "The Lovely Bones",
+      "poster": "imagenes/bones.jpg",
+      "director": "Peter Jackson",
+      "precio": 15.50,
+      "categoria": "Drama",
+      "año": 2009,
+      "actores": 
+      [
+        { "nombre": "Saorise Roman",
+          "personaje": "Susie Salmon",
+          "foto": "imagenes/saorise.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 2,
+			"titulo": "La guerra de las galaxias. Episodio I: La amenaza fantasma",
+      "poster": "imagenes/starwars.jpg",
+      "director": "George Lucas",
+      "precio": 18.99,
+      "categoria": "Acción",
+      "año": 1999,
+      "actores": 
+      [
+        { "nombre": "Ewan McGregor",
+          "personaje": "Obi-Wan Kenobi",
+          "foto": "imagenes/ewan.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 3,
+      "titulo": "Los amos de DogTown",
+      "poster": "imagenes/dogtown.jpg",
+      "director": "Stacy Peralta",
+      "precio": 10.89,
+      "categoria": "Documental",
+      "año": 2005,
+      "actores": 
+      [
+        { "nombre": "John Robinson",
+          "personaje": "Stacy Peralta",
+          "foto": "imagenes/john.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 4,
+      "titulo": "Avengers: Endgame",
+      "poster": "imagenes/avengers.jpg",
+      "director": "Russo brothers",
+      "precio": 23.99,
+      "categoria": "Accion",
+      "año": 2019,
+      "actores": 
+      [
+        { "nombre": "Robert Downey Jr",
+          "personaje": "Tony Stark",
+          "foto": "imagenes/robert.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 5,
+      "titulo": "Joker",
+      "poster": "imagenes/joker.jpg",
+      "director": "Todd Philips",
+      "precio": 14.25,
+      "categoria": "Drama",
+      "año": 2019,
+      "actores": 
+      [
+        { "nombre": "Joaquin Phoenix",
+          "personaje": "Joker",
+          "foto": "imagenes/joaquin.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 6,
+      "titulo": "Her",
+      "poster": "imagenes/her.jpg",
+      "director": "Spike Jonze",
+      "precio": 10.75,
+      "categoria": "Drama",
+      "año": 2013,
+      "actores": 
+      [
+        { "nombre": "Joaquin Phoenix",
+          "personaje": "Theodore",
+          "foto": "imagenes/joaquin.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 7,
+      "titulo": "Your Name",
+      "poster": "imagenes/yourname.jpg",
+      "director": "Makoto Shinkai",
+      "precio": 8.99,
+      "categoria": "Animacion",
+      "año": 2016,
+      "actores": 
+      [
+        { "nombre": "Mone Kamishiraishi",
+          "personaje": "Mitsuha Miyamizu",
+          "foto": "imagenes/mone.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 8,
+      "titulo": "Los mundos de Coraline",
+      "poster": "imagenes/coraline.jpg",
+      "director": "Henry Selick",
+      "precio": 5.75,
+      "categoria": "Animacion",
+      "año": 2009,
+      "actores": 
+      [
+        { "nombre": "Dakota Fanning",
+          "personaje": "Coraline",
+          "foto": "imagenes/dakota.jpg"
+        }
+      ]
+    }, 
+    { 
+      "id": 9,
+      "titulo": "Midsommar",
+      "poster": "imagenes/midsommar.jpg",
+      "director": "Ari Aster",
+      "precio": 18.99,
+      "categoria": "Terror",
+      "año": 2019,
+      "actores": 
+        [
+          { "nombre": "Florence Pugh",
+            "personaje": "Dani",
+            "foto": "imagenes/florence.jpg"
+          }
+        ]
+    },
+    { 
+      "id": 10,
+      "titulo": "Se lo llevaron: Recuerdos de una niña de Camboya",
+      "poster": "imagenes/father.jpg",
+      "director": "Angelina Jolie",
+      "precio": 21.99,
+      "categoria": "Documental",
+      "año": 2017,
+      "actores": 
+      [
+        { "nombre": "Loung Ung",
+          "personaje": "Loung Ung",
+          "foto": "imagenes/loung.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 11,
+      "titulo": "Superbad",
+      "poster": "imagenes/superbad.jpg",
+      "director": "Greg Mottolla",
+      "precio": 7.99,
+      "categoria": "Comedia",
+      "año": 2007,
+      "actores": 
+      [
+        { "nombre": "Michael Cera",
+          "personaje": "Evan",
+          "foto": "imagenes/michael.jpg"
+        }
+      ]
+    },
+    { 
+      "id": 12,
+      "titulo": "IT",
+      "poster": "imagenes/it.jpg",
+      "director": "Andy Muschietti",
+      "precio": 13.25,
+      "categoria": "Terror",
+      "año": 2017,
+      "actores": 
+      [
+        { "nombre": "Finn Wolfhard",
+          "personaje": "Richie Tozier",
+          "foto": "imagenes/finn.jpg"
+        }
+      ]
+    }
+  ]
+}

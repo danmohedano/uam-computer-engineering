@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Apply Group
+{% endblock %}
+
+{% block body_block %}
+    {% if msg == 0 %}
+        Select the group you want to join to:
+        <form id="group_form" method="post" action="{% url 'core:applygroup' %}">
+            {% csrf_token %}
+            <select name="myLabGroup" required id="id_labGroup">
+                <option value selected>-----------</option>
+                {% for g in groups %}
+                    <option value="{{ g.id }}">{{ g }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="submit" />
+        </form>
+    {% elif msg == 1 %}
+        You are already part of group <strong>{{ labGroup }}</strong>.
+    {% elif msg == 2 %}
+        Group selection is not active
+    {% elif msg == 3 %}
+        Invalid group.
+    {% endif %}
+{% endblock %}

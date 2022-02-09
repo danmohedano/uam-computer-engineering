@@ -1,0 +1,15 @@
+Generando traza (traza.pcap) para la pareja 3 del grupo 1391. (id=139103)
+Epoch de inicio: 1606645292
+
+Información útil para el estudiante:
+La dirección MAC que deberá tener en cuenta es: 00:11:88:CC:33:DB
+La dirección IP (origen o destino) del flujo TCP que deberá tener en cuenta es: 72.18.251.33
+El puerto (origen o destino) del flujo UDP que deberá tener en cuenta es: 14442
+
+PCAP generado con éxito!
+
+
+
+ANOTACIONES:
+-udp por algún motivo cuenta dos ICMP extras ????
+-ICMP lleva otro IP dentro y por lo tanto obtiene dos ip origen distintas

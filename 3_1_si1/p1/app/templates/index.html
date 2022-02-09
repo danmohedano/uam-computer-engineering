@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} 
+    {{ title }} 
+{% endblock %} 
+
+{% block content %}
+    <div id="search-form">
+        <form action={{ url_for('index') }} method="post">
+            <p>
+                <input type="search" id="titulo" name="titulo" placeholder="Buscar..." value="">
+                <select id="category-select" name="category">
+                    {% for cat in categories%}
+                        <option value={{ cat }}>{{ cat }}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Buscar" class="btn element-right">
+            </p>
+        </form>
+    </div>
+    <br>
+    {% for item in movies %}
+        <div class="content-element">
+            <a href={{ url_for('detail', movie_id=item.id) }}><img src={{ url_for('static', filename=item.poster) }} alt="poster" class="content-poster"></a>
+            <p>{{ item.titulo }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

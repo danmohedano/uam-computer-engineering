@@ -1,0 +1,40 @@
+main
+{
+  int count, x;
+  array int[20] i;
+  
+  function int getRandom(int num){
+    num = num * 11;
+    while ((num >= 20)){
+      num = num - 20;
+    }
+
+    return num;
+  }
+
+  count = 0;
+  while((count < 20)){
+    i[count] = count;
+    printf i[count];
+    count = count + 1;
+  }
+  printf true;
+  count = 0;
+  while((count < 20)){
+    printf i[getRandom(count)];
+    count = count + 1;
+  }
+  printf true;
+  count = 0;
+  while ((count < 20)){
+    x = count * count + count/3;
+    i[count] = x;
+    count = count + 1; 
+  }
+  count = 0;
+  while((count < 20)){
+    printf i[count];
+    count = count + 1;
+  }
+  printf false;
+}

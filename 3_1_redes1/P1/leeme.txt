@@ -1,0 +1,34 @@
+Autores:
+Daniel Mohedano <daniel.mohedano@estudiante.uam.es>
+Silvia Sopeña	<silvia.sopenna@estudiante.uam.es>
+----------------------------------------------------
++Normativa de entrega cumplida en su totalidad:
+Realizado. 
+Varias relecturas del enunciado.
+ 
++Contar paquetes de una traza (independientemente del número de paquetes): 
+Realizado.
+Se ha comparado el número de paquetes mostrado por el programa con el número que aparece en Wireshark.
+
++Contar paquetes de la interfaz de red: 
+Realizado.
+Al igual que en el punto anterior, se ha comparado el número de paquetes mostrado por el programa con el número que aparece en Wireshark.
+
++Uso de un único "flujo" para traza e interfaz:
+Realizado.
+Lo único que cambia es la forma de inicializar el descriptor pcap, tras eso se usa el mismo flujo para ambos casos.
+
++Almacenar correctamente el tráfico capturado en vivo una traza:
+Realizado.
+Se ha comparado la información obtenida en la captura en vivo con la obtenida al leer la traza y coinciden.
+
++Modificar fecha correctamente:
+Realizado.
+Se ha comprobado que la fecha UNIX de los paquetes al leer la traza es la misma que al capturar en vivo pero con 1800s añadidos (30 mins).
+
++Imprimir los N primeros bytes de un paquete (pruebe para N>15) y validarlo con Wireshark (captura de pantalla):
+Realizado. 
+Se ha comprobado hasta un N = 20. Captura de pantalla adjunta con nombre practica1captura.png
+
++Ejercicios de captura de tráfico: 
+Realizado.

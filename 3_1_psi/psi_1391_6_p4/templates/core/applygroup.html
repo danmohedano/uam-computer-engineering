@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Apply Group
+{% endblock %}
+
+{% block body_block %}
+    {% if msg == 0 %}
+        <p>Here you can request to join a Lab Group.</p>
+        <p>Obviously, you can only join groups that are not full, and also those that are related to your theory group.</p>
+        <p>Remember that once you request this, you can't change your mind.</p>
+        Select the group you want to join to:
+        <form id="group_form" method="post" action="{% url 'core:applygroup' %}">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="submit" />
+        </form>
+    {% elif msg == 1 %}
+        You are already part of group <strong>{{ labGroup }}</strong>. You don't have to this anymore.
+    {% elif msg == 2 %}
+        Group selection is not active. Please come later!
+    {% elif msg == 4 %}
+        Invalid form.
+    {% endif %}
+{% endblock %}

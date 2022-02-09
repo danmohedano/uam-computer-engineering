@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} {% endblock %} - Videoclub</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for( 'static', filename='style.css' ) }}>
+    <script src={{ url_for('static', filename="js/random_users.js") }}></script>
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <div class="header border">
+        <img src={{ url_for( 'static', filename='imagenes/icon.png' ) }} alt="logo" class="header-logo">
+        <div class="header-title">
+            VIDEOCLUB
+        </div>
+        <div class="element-right header-login">
+            {% if not session['usuario'] %}
+                <a href={{ url_for( 'login') }} class="btn element-right">LOG IN</a>
+            {% else %}
+                <div class="user-name"><strong>{{ session['user_nombre'] }}</strong></div>
+                <a href={{ url_for('logout') }} class="btn element-right">LOG OUT</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- CONTENIDO & MENU LATERAL -->
+    <div class="main">
+        <div class="lateral padding">
+            <a href={{ url_for( 'index') }} class="menu-element">PELÍCULAS</a>
+            {% if not session['usuario'] %}
+                <a href={{ url_for( 'login') }} class="menu-element">HISTORIAL</a>
+            {% else %}
+                <a href={{ url_for( 'historial') }} class="menu-element">HISTORIAL</a>
+            {% endif %}
+            <a href={{ url_for( 'carrito') }} class="menu-element">CARRO</a>
+        </div>
+        <div class="content padding">
+            {% block content %} {% endblock %}
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <div class="foot border">
+            <div class="foot-element">
+                Usuarios conectados: <span id="usuarios-conectados">0</span>
+            <script>generar_usuarios("{{ url_for("generar") }}");</script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

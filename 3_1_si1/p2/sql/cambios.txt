@@ -1,0 +1,29 @@
+Faltan en el diagrama:
+-Customer Entero
+-orders.totalamount -> DERIVED
+
+CAMBIOS:
++customer.username -> UNIQUE
++customer.email -> UNIQUE
++imdb_actormovies.actorid + movieid -> PK
++imdb_actormovies.actorid -> FK
++imdb_actormovies.movieid -> FK
+-imdb_directormovies.directorid && movieid DEFAULT nextval?????
++imdb_directormovies.directorid && movieid ON DELETE CASCADE
+-imdb_moviecountries.movieid DEFAULT nextval????
++imdb_moviecountries.movieid -> ON DELETE CASCADE
+-imdb_moviegenres.movieid -> DEFAULT nextval????
++imdb_moviegenres.movieid -> ON DELETE CASCADE
++imdb_movielanguages.movieid -> ON DELETE CASCADE
++imdb_movielanguages.extrainformation -> part of PK??????
++inventory.prod_id -> FK
+-inventory NEEDED??? could be attributes of products
++orderdetail.orderid && prod_id -> PK
++orderdetail.orderid -> FK
++orderdetail.prod_id -> FK
+-orderdetail.quantity -> NOT 0????
++orders.customerid -> FK
++products.movieid -> ON DELETE CASCADE
+
+COMPROBAR MULTIVALUADOS!!!!
+-orders.status -> MULTIEVALUATED

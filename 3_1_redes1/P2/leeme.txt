@@ -1,0 +1,46 @@
+Autores:
+Daniel Mohedano <daniel.mohedano@estudiante.uam.es>
+Silvia Sopeña	<silvia.sopenna@estudiante.uam.es>
+----------------------------------------------------
++Normativa de entrega cumplida en su totalidad: 5%
+-Realizado
+Varias relecturas del enunciado.
+
++Recibir tramas Ethernet, realizar comprobaciones y llamar correctamente a la función de callback de nivel superior 10%
+-Realizado
+Se ha comprobado que al recibir una trama ethernet a través del script se ejecuta la función de callback process_arp_frame().
+
++Enviar tramas Ethernet  correctamente 10%
+-Realizado
+Se ha comprobado tanto a través del correcto funcionamiento del script en los tests como utilizando Wireshark para observar que la estructura de las tramas es la correcta.
+
++Enviar correctamente peticiones ARP 10%
+-Realizado
+De nuevo, como en el apartado anterior, se ha comprobado tanto con el correcto funcionamiento del script en los tests como comprobando manualmente las tramas con Wireshark.
+
++Procesar correctamente peticiones ARP recibidas 15%
+-Realizado
+Se ha comprobado que al recibir una petición ARP se procesa correctamente. Ej. si la petición ARP no ha sido enviada a la interfaz esta no contesta. En cambio, si el destino si es la interfaz, contesta correctamente a la Request.
+
++Enviar correctamente respuestas ARP 10%
+-Realizado
+Se ha comprobado que las respuestas se envían correctamente tanto con el correcto funcionamiento del script en los tests como comprobando manualmente las tramas con Wireshark.
+
++Procesar correctamente respuestas ARP 15%
+-Realizado
+Se ha comprobado que se procesan correctamente las respuestas y se actualizan las variables globales correctamente. Además solo se procesan las respuestas si se está esperando una respuesta.
+
++Manejo correcto de la caché ARP 5%
+-Realizado
+Se ha comprobado que tras recibir una respuesta el contenido de la caché se actualiza y además si se vuelve a pedir una mac se obtiene de la caché en vez de enviar otra petición.
+
++Uso correcto de Locks 5%
+-Realizado
+En ningún momento dan problemas las variables globales, siempre que se modifican se utilizan los locks.
+
++Realiza correctamente el ARP gratuito 10%
+-Realizado
+Hemos comprobado tanto cambiandole la ip a una interfaz y ejecutando el script en ambas como ejecutando el script dos veces en la misma interfaz. En ambos casos la segunda ejecución muestra un mensaje de error
+indicando que no se pudo inicializar ARP puesto que la IP ya estaba en uso. Aun así, no hemos conseguido que por ejemplo: al cambiar la ip de h2 a la ip de h1 y ejecutar el script en h1 el propio sistema conteste 
+al ARPGratuito realizado por h1. Siempre hemos tenido que comprobarlo lanzando el script dos veces de forma simultanea. Entendemos que no es un problema del script ya que hemos comprobado los ARPGratuitos 
+a través de Wireshark y están bien construidos. Además, el propio script contesta correctamente a esos ARPGratuitos. 

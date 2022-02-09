@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+{% block title %} 
+    {{ title }} 
+{% endblock %} 
+
+{% block content %}
+
+<form action={{ url_for('vaciar_carro') }} method="post">
+    <input type="submit" value="Vaciar carro" class="btn element-right">
+</form>
+
+<div>
+    <img src={{ url_for( 'static', filename='imagenes/carrito-gris.png' ) }} alt="Icono del carrito" class="icono-carrito">
+</div>
+
+<div>
+    <h1>
+        Carrito de películas
+    </h1>
+</div>
+
+<div class="carro">
+    <table>
+        <tr>
+            <th>Película</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th></th>
+        </tr>
+        {% for movie, quantity in carrito %}
+            <tr>
+                <th>{{ movie.titulo }}</th>
+                <th>{{ movie.precio*quantity }}</th>
+                <th>{{ quantity }}</th>
+                <th>
+                    <div class="container-carro-btn">
+                        <form action={{ url_for('sub_one_movie', movie_id=movie.id) }} method="post"><input type="submit" value="-" class="btn element-right" id="carro-btn1"></form>
+                    </div>
+                    <div class="container-carro-btn">
+                        <form action={{ url_for('add_one_movie', movie_id=movie.id) }} method="post"><input type="submit" value="+" class="btn element-right" id="carro-btn2"></form>
+                    </div>
+                </th>
+            </tr>                
+        {% endfor %}
+    </table>
+</div>
+
+<h4>Total a pagar: {{ total_pagar }} €</h4>
+{% if saldo %}
+    {% set post_saldo = saldo - total_pagar %}
+    <h4>Saldo trás la compra: {{ '%0.2f' % post_saldo|float }} €</h4>
+{% endif %}
+<form action={{ url_for('carrito') }} method="post">
+    <input type="submit" value="Finalizar compra" class="btn element-right">
+</form> 
+{% endblock %}

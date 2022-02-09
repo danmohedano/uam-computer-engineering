@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Apply Pair
+{% endblock %}
+
+{% block body_block %}
+    {% if error == 0 %}
+        Select the second member of your pair:
+        <form id="pair_form" method="post" action="{% url 'core:applypair' %}">
+            {% csrf_token %}
+            <select name="secondMemberGroup" required id="id_secondMemberGroup">
+                <option value selected>-----------</option>
+                {% for s in students %}
+                    <option value="{{ s.id }}">{{ s }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="submit" />
+        </form>
+    {% elif error == 1 %}
+        You are already part of a validated pair. Break it in order to request a new one.
+    {% elif error == 2 %}
+        You have already requested a pair. Break it in order to request a new one.
+    {% elif error == 3 %}
+        User has already selected a pair
+    {% endif %}
+{% endblock %}

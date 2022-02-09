@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Convalidation
+{% endblock %}
+
+{% block body_block %}
+    {% if error == 0 %}
+        Congratulations, your grades have been correctly convalidated!
+    {% elif error == 1 %}
+        You are already part of a laboratory group. Why would you want to convalidate your grades then?
+    {% elif error == 2 %}
+        You are part of a pair. Remember that you can't request convalidation while in a pair!
+    {% elif error == 3 %}
+        You have requested a pair. Remember that you can't request convalidation while in a pair!
+    {% elif error == 4 %}
+        Your grades, <strong>theory</strong>={{ lab_grade }} and <strong>lab</strong>={{ theory_grade }} , do not satisfy the requirements for convalidation. Unlucky.
+    {% elif error == 5 %}
+        Your grades are already convalidated. What are you doing here?
+    {% endif %}
+{% endblock %}

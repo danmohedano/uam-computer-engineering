@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href={{ url_for( 'static', filename='style.css' ) }}>
+	<script src={{ url_for('static', filename="js/jquery-3.5.1.min.js") }}></script>
+	<script src={{ url_for('static', filename="js/register_functions.js") }}></script>
+</head>
+
+<body>
+	<div class="login">
+		<div class="login-screen">
+			<h1>Register</h1>
+				<form action={{ url_for('register') }} method="post">
+					<div class="login-form">
+					<input name="username" type="text" value="" pattern="[a-zA-Z0-9]+" placeholder="username" id="register-name" required>
+					</div>
+
+					<div class="login-form">
+					<input name="password" type="password" value="" minlength=8 placeholder="password" id="register-password" required>
+					<meter class="hidden" id="meter" value="0" min="0" max="4"></meter>
+					</div>
+					
+					<div class="login-form">
+					<input name="email" type="email" value="" placeholder="e-mail" id="register-email" required>
+					</div>
+					
+					<div class="login-form">
+					<input name="cardnumber" type="text" value="" minlength=16 maxlength=16 pattern="[0-9]+" placeholder="card number" id="register-card" required>
+					</div>
+					<input type="submit" class="btn">
+                </form>
+                {% if error_msg %}
+			        <p class="login-txt"><b>{{ error_msg }}</b></p>
+				{% endif %}
+		</div>
+	</div>
+</body>

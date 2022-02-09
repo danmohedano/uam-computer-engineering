@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>
+            {% block title_block %}
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static "css/style.css" %}" />
+    </head>
+    <body>
+        <nav class="navbar-left navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <p><li class="active"><a href="{% url 'core:home' %}">Home</a></li></p>
+                    <p><li class="active"><a href="{% url 'core:login' %}">Log-In</a></li></p>
+                    {% if user.is_authenticated %}
+                        <p><li><a href="{% url 'core:logout' %}">Logout</a></li></p>
+                        <p><li><a href="{% url 'core:convalidation' %}">Convalidation</a></li></p>
+                        <p><li><a href="{% url 'core:applypair' %}">Apply Pair</a></li></p>
+                        <p><li><a href="{% url 'core:breakpair' %}">Break Pair</a></li></p>
+                        <p><li><a href="{% url 'core:applygroup' %}">Apply Group</a></li></p>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            {% block body_block %}
+            {% endblock %}
+        </div>
+
+        <div class="panel-footer">
+            This page was made by the brilliant minds of:<br>
+            Daniel Mohedano Rodríguez - daniel.mohedano@estudiante.uam.es<br>
+            Silvia Sopeña Niecko - silvia.sopenna@estudiante.uam.es<br>
+            Please, do NOT contact us if you find any problem.
+            <br>
+        </div>
+    </body>
+ </html>

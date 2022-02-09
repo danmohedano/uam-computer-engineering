@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Home
+{% endblock %}
+
+{% block body_block %}
+    {% if user.is_authenticated and name %}
+        This is your summary page, <b>{{ name }}</b>! 
+        Currently, your theory group is {{ theoryGroup.groupName }}.
+
+        <h3>Convalidation</h3>
+        {% if convalidation %}
+            <p>Your lab assignments have been convalidated correctly!</p>
+        {% else %}
+            <p>Your lab assignments have not been convalidated yet.</p>
+            <p>If you want to requesta convalidation, just go ahead and press the "Convalidation" button.)</p>
+        {% endif %}
+
+        <h3>Pair Status</h3>
+        {% if pairs %}
+            You are part of the following pair(s)
+            {% for pair in pairs %}
+                <ul>
+                    <li>{{ pair.student1 }}</li>
+                    <li>{{ pair.student2 }}</li>
+                </ul>
+                {% if pair.validated == False %}
+                    {{ pair.student2 }} has not validated the pair yet.
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>Seems like you are alone.</p>
+            <p>Go ahead and request a colleague to form a pair in the "Apply Pair" button!</p>
+        {% endif %}
+
+        <h3>Selected Group</h3>
+        {% if labGroup %}
+            Currently your lab group is: {{ labGroup.groupName }}
+        {% else %}
+            <p>Your do not have an assigned lab group yet.</p>
+            <p>If you want to request a lab group press the "Apply Group" button!</p>
+            <p>Remember that once you apply to a Lab Group, there is no going back!</p>
+        {% endif %}
+    {% else %}
+        Hi! Welcome. This website allows you to do several things:
+        <ol>
+            <li>Login:
+                <p>You can login in with your credentials to start using our services.</p>
+            </li>
+            <li>Apply for convalidation if appropiate:
+                <p>If you have grades from a previous year that you want to convalidate, just go ahead and do it!</p>
+            </li>
+            <li>Select partner:
+                <p>Feeling alone in those labs? Just request a friend to be your partner.</p>
+            </li>
+            <li>Select group:
+                <p>If you are not part of a group yet, you should probably apply for one. Remember! You can only apply once the service opens.</p>
+            </li>
+        </ol>
+    {% endif %}
+{% endblock %}

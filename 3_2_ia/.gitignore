@@ -1,0 +1,8 @@
+*.pyc
+*.idea
+p2/test_data
+*__pycache__*
+*.vscode*
+*.zip
+*.pdf
+*2391_*/

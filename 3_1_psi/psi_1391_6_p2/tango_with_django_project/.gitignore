@@ -1,0 +1,9 @@
+.coverage
+.idea
+*.pyc
+__pycache__
+*.swp
+db.sqlite3
+*~
+tmp/*
+media/*

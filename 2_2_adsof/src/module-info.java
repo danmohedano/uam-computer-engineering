@@ -1,0 +1,2 @@
+module adsof_lab {
+}
