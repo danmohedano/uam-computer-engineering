@@ -1,2 +1,2 @@
-# uam_computer_engineering
+# uam-computer-engineering
 Repository for all assignments of Computer Engineering at UAM.
