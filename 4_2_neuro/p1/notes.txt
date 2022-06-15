@@ -1,0 +1,15 @@
+Adalaine -> valores pequeños: 0-0.5 (en los límites de peso de las conexiones)
+Error cuadrático medio tras cada iteración
+
+Gráfica donde se muestre ECM frente al número de época además para distintas cte. aprendizaje
+
+para comparar, mejor accuracy, no ECM
+learning rate, escala logarítmica (0,1 0,01 0,001 ...)
+una entrada -> un poco la evolución temporal que lleva a la clasificación
+TODO:
+Fronteras de decisión
+Error cuadrático medio
+
+
+Dudas:
+Que tolerancia utilizar en Adaline?
